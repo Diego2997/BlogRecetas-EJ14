@@ -3,13 +3,15 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css'
 import Admin from './components/pages/Admin';
 import CrearReceta from './components/pages/Recetas/CrearReceta';
+import Inicio from './Inicio';
 
 function App() {
 
   return (
     <>
     {/* <Admin></Admin> */}
-    <CrearReceta></CrearReceta>
+    {/* <CrearReceta></CrearReceta> */}
+<Inicio></Inicio>
     </>
   )
 }
