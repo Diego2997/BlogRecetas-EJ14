@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 
 const Login = ({setUsuarioLogueado}) => {
   const { register, handleSubmit, formState: { errors}, reset } = useForm();
-  const navegacion = useNavigate();
+  // const navegacion = useNavigate();
 
 
 const onSubmit = (usuario)=>{
