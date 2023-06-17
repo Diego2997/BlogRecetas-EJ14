@@ -1,9 +1,10 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Carousel,Container,Row } from 'react-bootstrap';
+import CardRecetas from './components/pages/Recetas/CardRecetas';
 
 const Inicio = () => {
     return (
-        <div>
+        <>
             <Carousel>
       <Carousel.Item>
         <img
@@ -43,7 +44,16 @@ const Inicio = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-        </div>
+    <Container>
+        <h1 className="display-4">Recetas</h1>
+        <hr />
+        <Row>
+            <CardRecetas></CardRecetas>
+            <CardRecetas></CardRecetas>
+            <CardRecetas></CardRecetas>
+        </Row>
+      </Container>
+        </>
     );
 };
 
