@@ -3,7 +3,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css'
 import Admin from './components/pages/Admin';
 import CrearReceta from './components/pages/Recetas/CrearReceta';
-import Inicio from './Inicio';
+import Inicio from './components/pages/Inicio';
 
 function App() {
 

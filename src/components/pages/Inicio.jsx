@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel,Container,Row } from 'react-bootstrap';
-import CardRecetas from './components/pages/Recetas/CardRecetas';
+import CardRecetas from './Recetas/CardRecetas';
 
 const Inicio = () => {
     return (
