@@ -1,5 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css'
+import Admin from './components/pages/Admin';
+import CrearReceta from './components/pages/Recetas/CrearReceta';
 import { BrowserRouter,Route,Routes} from 'react-router-dom';
 import Footer from './components/common/Footer'
 import Menu from './components/common/Menu'
