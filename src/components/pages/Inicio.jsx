@@ -1,7 +1,6 @@
 import React from 'react';
 import { Carousel,Container,Row } from 'react-bootstrap';
 import CardRecetas from './Recetas/CardRecetas';
-
 const Inicio = () => {
     return (
         <>
@@ -56,5 +55,4 @@ const Inicio = () => {
         </>
     );
 };
-
 export default Inicio;
