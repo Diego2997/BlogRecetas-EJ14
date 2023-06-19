@@ -3,9 +3,7 @@ import './App.css'
 import { BrowserRouter,Route,Routes} from 'react-router-dom';
 import Footer from './components/common/Footer'
 import Menu from './components/common/Menu'
-
 function App() {
-
   return (
     <>
     <BrowserRouter>
@@ -18,5 +16,4 @@ function App() {
     </>
   )
 }
-
 export default App
