@@ -3,25 +3,28 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css'
 import Registro from './components/pages/Registo';
 import Admin from './components/pages/Admin';
-import CrearReceta from './components/pages/Recetas/CrearReceta';
 import Inicio from './components/pages/Inicio';
 import Detalle from './components/pages/Detalle';
 import { BrowserRouter,Route,Routes} from 'react-router-dom';
 import Footer from './components/common/Footer'
 import Menu from './components/common/Menu'
+import Login from './components/pages/Login'
+import { useState } from 'react';
+
 function App() {
+  const usuario = JSON.parse(sessionStorage.getItem("usuario")) || {}
+  const [usuarioLogueado,setUsuarioLogueado] = useState(usuario)
+
   return (
     <>
-    <Registro></Registro>
-    {/* <Admin></Admin> */}
-    {/* <CrearReceta></CrearReceta> */}
-{/* <Inicio></Inicio> */}
-<Detalle></Detalle>
-<Inicio></Inicio>
     <BrowserRouter>
-    {/* <Menu></Menu> */}
+    <Menu usuarioLogueado={usuarioLogueado} setUsuarioLogueado={setUsuarioLogueado}></Menu>
       <Routes>
-      {/* AQUI VAN LAS RUTAS */}
+      <Route path='/' element={<Inicio></Inicio>}></Route>
+      <Route path='/login' element={<Login></Login>}></Route>
+      <Route path='/register' element={<Registro></Registro>}></Route>
+      <Route path='/detalle' element={<Detalle></Detalle>}></Route>
+      <Route path='/administrador/*' element={<Admin></Admin>}></Route>
       </Routes>
       <Footer/>
     </BrowserRouter>
