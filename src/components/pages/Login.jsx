@@ -4,15 +4,9 @@ import { login } from "../helpers/queries";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
-
-
-
-
 const Login = ({setUsuarioLogueado}) => {
   const { register, handleSubmit, formState: { errors}, reset } = useForm();
   // const navegacion = useNavigate();
-
-
 const onSubmit = (usuario)=>{
   login(usuario).then((respuesta)=>{
     console.log(respuesta)
