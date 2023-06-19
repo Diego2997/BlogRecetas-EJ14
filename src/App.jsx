@@ -4,6 +4,7 @@ import './App.css'
 import Admin from './components/pages/Admin';
 import CrearReceta from './components/pages/Recetas/CrearReceta';
 import Inicio from './components/pages/Inicio';
+import Detalle from './components/pages/Detalle';
 
 function App() {
 
@@ -11,7 +12,9 @@ function App() {
     <>
     {/* <Admin></Admin> */}
     {/* <CrearReceta></CrearReceta> */}
-<Inicio></Inicio>
+{/* <Inicio></Inicio> */}
+<Detalle></Detalle>
+
     </>
   )
 }
