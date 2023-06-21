@@ -28,3 +28,18 @@ Crea una aplicación web, que permita mostrar un blog de recetas de cocina en un
 ```
 git clone https://github.com/Diego2997/BlogRecetas-EJ14.git
 ```
+## Autor:
+- Link de GitHub: ⬇ <br>
+🦾 [Diego Mercado](https://github.com/Diego2997) 🦾<br>
+⬇Link de LinkedIn: ⬇ <br>
+- 🦾 👩‍💻[Diego Mercado](https://www.linkedin.com/in/fdmercado/) 👩‍💻 🦾
+
+- Link de GitHub: ⬇ <br>
+💻 [Emanuel Ruiz Villalobo](https://github.com/ruizemanuelm) 💻<br>
+⬇Link de LinkedIn: ⬇ <br>
+- 💻 👩‍💻[Emanuel Ruiz Villalobo](https://www.linkedin.com/in/matias-emanuel-ruiz/) 👩‍💻 💻
+
+- Link de GitHub: ⬇ <br>
+💜 [Laura Rota](https://github.com/RLauraS) 💜<br>
+⬇Link de LinkedIn: ⬇ <br>
+- 💜 👩‍💻[Laura Rota](https://www.linkedin.com/in/laura-rota-51699b243/?original_referer=) 👩‍💻 💜
