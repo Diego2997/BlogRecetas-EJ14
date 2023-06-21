@@ -1,4 +1,3 @@
-import { Type } from "react-bootstrap-icons";
 
 const URL_usuario = import.meta.env.VITE_API_USUARIO;
 const URL_recetas = import.meta.env.VITE_API_RECETA;

@@ -13,12 +13,10 @@ const Login = ({setUsuarioLogueado}) => {
   login(usuario).then((respuesta)=>{
     console.log(respuesta)
     if(respuesta){
-      //guardar mi usuario en session o localstorage.
       sessionStorage.setItem('usuario', JSON.stringify(respuesta));
       setUsuarioLogueado(respuesta);
       navegacion('/administrador');
     }else{
-      //mostrar un mensaje  de error
       Swal.fire(
         'Ocurrio un error',
         'El email o usuario son erroneos',
@@ -37,7 +35,7 @@ const Login = ({setUsuarioLogueado}) => {
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email</Form.Label>
               <Form.Control
-                type="text"
+                type="email"
                 placeholder="Ingrese un email"
                { ...register('email', {
                 required:'El email es un dato obligatorio',
