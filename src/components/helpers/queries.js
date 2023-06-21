@@ -1,6 +1,20 @@
-
 const URL_usuario = import.meta.env.VITE_API_USUARIO;
 const URL_recetas = import.meta.env.VITE_API_RECETA;
+
+export const guardarUsuario = async (usuario)=>{
+    try{
+        const respuesta = await fetch(URL_usuario,{
+            method: "POST",
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(usuario)
+        });
+        return respuesta;
+    }catch (error){
+        console.log(error)
+    }
+}
 
 export const login = async (usuario)=>{
     try{
