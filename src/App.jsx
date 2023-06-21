@@ -1,12 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Login from "./components/pages/Login";
+import Error404 from "./components/pages/Error404";
 
 
 function App() {
   return (
 <>
-<Login></Login>
+<Error404></Error404>
 </>
   );
 }
