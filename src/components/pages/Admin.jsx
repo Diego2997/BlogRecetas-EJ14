@@ -1,15 +1,16 @@
 import React from 'react';
-import { Table, Button } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 import ItemRecetas from './Recetas/ItemRecetas';
+import { Link } from 'react-router-dom';
 
 const Admin = () => {
     return (
            <section className="container mainSection">
         <div className="d-flex justify-content-between align-items-center mt-5">
           <h1 className="display-4 ">Recetas disponibles</h1>
-          <Button className="btn btn-info " to='/administrar/crear'>
+          <Link className="btn btn-info " to='/administrador/crear-receta'>
           <i class="bi bi-plus-circle-fill"> Nueva Receta </i>
-          </Button>
+          </Link>
         </div>
         <hr />
         <Table responsive striped bordered hover>

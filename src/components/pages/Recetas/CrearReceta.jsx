@@ -15,7 +15,7 @@ const CrearReceta = () => {
             />
            
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formNombreProdcuto">
+          <Form.Group className="mb-3" controlId="formPreparacion">
             <Form.Label>Preparacion</Form.Label>
             <Form.Control
             as="textarea"
@@ -40,7 +40,7 @@ const CrearReceta = () => {
             />
         
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formPrecio">
+          <Form.Group className="mb-3" controlId="formCategoria">
             <Form.Label>Categoria*</Form.Label>
             <Form.Select
             >
