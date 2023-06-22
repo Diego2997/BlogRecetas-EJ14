@@ -1,4 +1,3 @@
-
 import { Button, Form } from "react-bootstrap";
 
 const Registro = () => {
@@ -34,6 +33,4 @@ const Registro = () => {
     </div>
   );
 };
-
 export default Registro;
-
