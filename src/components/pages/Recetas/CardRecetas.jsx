@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Card, Button } from 'react-bootstrap';
 import { obtenerRecetas } from '../../helpers/queries';
 import { useState,useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const CardRecetas = () => {
   const [recetas, setRecetas] = useState([]);
@@ -24,7 +25,7 @@ const CardRecetas = () => {
           <Card.Body >
             <Card.Title>{receta.nombreReceta}</Card.Title>
             <Card.Text >{receta.categoria}</Card.Text>
-            <Button variant="primary">Ver detalle</Button>
+            <Button as={Link} to={"/detalle/"+receta.id} variant="primary">Ver detalle</Button>
           </Card.Body>
         </Card>
       </Col>   ))}

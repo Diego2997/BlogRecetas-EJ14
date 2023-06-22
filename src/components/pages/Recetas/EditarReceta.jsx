@@ -106,7 +106,7 @@ const EditarReceta = () => {
               })}
             />
          <Form.Text className="text-danger">
-            {errors.ingredientesReceta?.message}
+            {errors.ingredientes?.message}
           </Form.Text>
           </Form.Group>
           <Form.Group className="mb-3" controlId="formImagen">

@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css'
 import Registro from './components/pages/Registo';
-import Inicio from './components/pages/inicio';
+import Inicio from './components/pages/Inicio';
 import Detalle from './components/pages/Detalle';
 import { BrowserRouter,Route,Routes} from 'react-router-dom';
 import Footer from './components/common/Footer'
@@ -25,7 +25,7 @@ function App() {
       <Route exact path='/' element={<Inicio></Inicio>}></Route>
       <Route exact path='/login' element={<Login setUsuarioLogueado={setUsuarioLogueado}></Login>}></Route>
       <Route exact path='/registro' element={<Registro></Registro>}></Route>
-      <Route exact path='/detalle' element={<Detalle></Detalle>}></Route>
+      <Route exact path='/detalle/:id' element={<Detalle></Detalle>}></Route>
       <Route path='/administrador/*' element={<RutasProtegidas>
         <RutasAdministrador></RutasAdministrador>
       </RutasProtegidas>}></Route>
