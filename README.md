@@ -1,6 +1,10 @@
-# TRABAJO PRÁCTICO N°6 - REACT
+# TRABAJO PRÁCTICO - REACT
 
 Trabajo práctico de REACT
+
+## DEMO
+
+1. [Proyecto](https://recetasreact.netlify.app/) 
 
 Enunciado de ejercicio n° 14:
 
@@ -27,6 +31,25 @@ Crea una aplicación web, que permita mostrar un blog de recetas de cocina en un
 2. Escribir el siguiente comando:
 ```
 git clone https://github.com/Diego2997/BlogRecetas-EJ14.git
+```
+
+3. Ejecuta el siguiente comando para instalar las dependencias del proyecto:
+
+```
+npm install
+```
+
+## Ejecutar la aplicación
+Una vez que hayas configurado el proyecto, puedes ejecutar la aplicación utilizando el siguiente comando:
+
+```
+npm run dev
+```
+
+ En otra terminal ejecutar el siguiente comando:
+
+```
+json-server --watch db.json --port 3004
 ```
 ## Autor:
 - Link de GitHub: ⬇ <br>
