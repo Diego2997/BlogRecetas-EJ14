@@ -14,7 +14,7 @@ const ItemRecetas = ({receta}) => {
       <td >
         <div className="d-flex">
         <Button className="btn btn-success mx-1">
-          <i class="bi bi-pencil-fill"></i>
+          <i className="bi bi-pencil-fill"></i>
         </Button>
         <Button className="mx-1" variant="danger">
           <i class="bi bi-x-circle"></i>

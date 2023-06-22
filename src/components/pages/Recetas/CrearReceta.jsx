@@ -2,6 +2,7 @@ import React from "react";
 import { Form, Button } from "react-bootstrap";
 import { crearReceta } from "../../helpers/queries";
 import Swal from "sweetalert2";
+import { useForm } from "react-hook-form";
 
 const CrearReceta = () => {
   const {
@@ -12,7 +13,7 @@ const CrearReceta = () => {
   } = useForm();
 
   const onSubmit = (recetaNueva) => {
-    console.log(recetaNuevaNuevo);
+    console.log(recetaNueva);
 
     crearReceta(recetaNueva).then((respuesta) => {
       if (respuesta && respuesta.status === 201) {
@@ -36,18 +37,72 @@ const CrearReceta = () => {
     <section className="container mainSection">
       <h1 className="display-4 mt-5">Nueva Receta</h1>
       <hr />
-      <Form>
-        <Form.Group className="mb-3" controlId="formNombreProdcuto">
+      <Form onSubmit={handleSubmit(onSubmit)}>
+        <Form.Group className="mb-3" controlId="formNombreReceta">
           <Form.Label>Receta*</Form.Label>
-          <Form.Control type="text" placeholder="Ej: Flan" />
+          <Form.Control
+            type="text"
+            placeholder="Ej: Flan"
+            {...register("nombreReceta", {
+              required: "El nombre de la receta es un dato obligatorio",
+              minLength: {
+                value: 2,
+                message: "La cantidad minima de caracteres es de 2 caracteres",
+              },
+              maxLength: {
+                value: 100,
+                message:
+                  "La cantidad maxima de caracteres es de 100 caracteres",
+              },
+            })}
+          />
+          <Form.Text className="text-danger">
+            {errors.nombreReceta?.message}
+          </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formPreparacion">
-          <Form.Label>Preparacion</Form.Label>
-          <Form.Control as="textarea" type="text" placeholder="" />
+          <Form.Label>Preparacion*</Form.Label>
+          <Form.Control
+            as="textarea"
+            type="text"
+            placeholder=""
+            {...register("preparacionReceta", {
+              required: "El método de preparación es obligatorio",
+              minLength: {
+                value: 10,
+                message: "La cantidad minima de caracteres es de 10 caracteres",
+              },
+              maxLength: {
+                value: 700,
+                message:
+                  "La cantidad maxima de caracteres es de 700 caracteres",
+              },
+            })}
+          />
+          <Form.Text className="text-danger">
+            {errors.preparacionReceta?.message}
+          </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formPrecio">
           <Form.Label>Ingredientes*</Form.Label>
-          <Form.Control type="text" />
+          <Form.Control
+            type="text"
+            {...register("ingredientesReceta", {
+              required: "Es necesario ingresar los ingredientes",
+              minLength: {
+                value: 5,
+                message: "La cantidad minima de caracteres es de 5 caracteres",
+              },
+              maxLength: {
+                value: 500,
+                message:
+                  "La cantidad maxima de caracteres es de 500 caracteres",
+              },
+            })}
+          />
+          <Form.Text className="text-danger">
+            {errors.ingredientesReceta?.message}
+          </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formImagen">
           <Form.Label>Imagen URL*</Form.Label>
@@ -69,10 +124,11 @@ const CrearReceta = () => {
         </Form.Group>
         <Form.Group className="mb-3" controlId="formCategoria">
           <Form.Label>Categoria*</Form.Label>
-          <Form.Select 
+          <Form.Select
             {...register("categoria", {
               required: "La categoria es obligatoria",
-            })}>
+            })}
+          >
             <option value="">Seleccione una opcion</option>
             <option value="Almuerzo">Almuerzo</option>
             <option value="Postres">Postres</option>
@@ -80,6 +136,9 @@ const CrearReceta = () => {
             <option value="Sandwiches">Sandwiches</option>
             <option value="Ensaladas">Ensaladas</option>
           </Form.Select>
+          <Form.Text className="text-danger">
+            {errors.categoria?.message}
+          </Form.Text>
         </Form.Group>
         <Button variant="primary" type="submit">
           Guardar

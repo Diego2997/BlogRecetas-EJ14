@@ -15,8 +15,8 @@ const CardRecetas = () => {
       <>
       
       {recetas?.map((receta) => (
-        <Col md={4} ld={3} className="mb-3">
-        <Card className='h-100' >
+        <Col md={4} ld={3} className="mb-3" key={receta.id}>
+          <Card className="h-100">
           <Card.Img
             variant="top"
             src={receta.imagen}
