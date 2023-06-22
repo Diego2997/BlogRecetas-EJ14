@@ -36,6 +36,7 @@ export const login = async (usuario)=>{
         console.log(error)
     }
 }
+
 export const obtenerRecetas = async ()=>{
     try{
         const respuesta = await fetch(URL_recetas);

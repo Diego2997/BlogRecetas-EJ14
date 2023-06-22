@@ -1,16 +1,16 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 
-const ItemRecetas = () => {
+const ItemRecetas = ({receta}) => {
   return (
     <tr>
-      <td>1</td>
-      <td>FLAN CASERO</td>
-      <td>5 huevos, 500cc. de leche, 200g de azúcar</td>
+      <td>{receta.id}</td>
+      <td>{receta.nombreReceta}</td>
+      <td>{receta.ingredientes}</td>
       <td>
-        https://www.recetasderechupete.com/wp-content/uploads/2015/07/flan_de_huevo.jpg
+      {receta.imagen}
       </td>
-      <td>Postre</td>
+      <td>{receta.categoria}</td>
       <td >
         <div className="d-flex">
         <Button className="btn btn-success mx-1">
