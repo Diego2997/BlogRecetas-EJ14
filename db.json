@@ -53,22 +53,6 @@
       "imagen": "https://images.pexels.com/photos/10223395/pexels-photo-10223395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoria": "Salsas",
       "id": 5
-    },
-    {
-      "nombreReceta": "cupcake",
-      "preparacionReceta": "lalalalalla",
-      "ingredientesReceta": "tomate, arroz, tequila",
-      "imagen": "https://images.pexels.com/photos/10223395/pexels-photo-10223395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Postres",
-      "id": 6
-    },
-    {
-      "nombreReceta": "Flan",
-      "preparacion": "asdasdasdasdasdasd",
-      "ingredientes": "azucar,nose,etc",
-      "imagen": "https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Postres",
-      "id": 7
     }
   ]
 }

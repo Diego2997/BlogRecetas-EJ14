@@ -72,6 +72,17 @@ export const crearReceta = async (receta)=>{
     }
 }
 
+export const eliminarReceta = async (id) =>{
+    try{
+        const receta = await fetch(URL_recetas+'/'+id,{
+            method: "DELETE",
+        });
+        return receta;
+    }catch(error){
+        console.log(error)
+    }
+}
+
 export const editaReceta = async (receta,id)=>{
     try{
         const respuesta = await fetch(URL_recetas+"/"+id,{
