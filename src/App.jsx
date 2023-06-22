@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css'
 import Registro from './components/pages/Registo';
-import Inicio from './components/pages/Inicio';
+import Inicio from './components/pages/inicio';
 import Detalle from './components/pages/Detalle';
 import { BrowserRouter,Route,Routes} from 'react-router-dom';
 import Footer from './components/common/Footer'
