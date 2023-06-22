@@ -11,3 +11,9 @@
     height: 395px;
     width: 100%;
 }
+
+.truncar{
+    max-width: 150px;
+    overflow-x: auto;
+    max-height: 75px;
+}
