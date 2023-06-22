@@ -1,4 +1,28 @@
-{    "usuarios": [
-    { "id": 1, "nombreUsuario": "admin", "email": "admin@rollingcode.code", "password": "123456aA$" }
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombreUsuario": "admin",
+      "email": "admin@rollingcode.code",
+      "password": "123456aA$"
+    }
+  ],
+  "receta": [
+    {
+      "id": 1,
+      "nombreReceta": "flan",
+      "preparacion": "alguna descripcion",
+      "ingredientes": "1,2",
+      "imagen": "https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "postre"
+    },
+    {
+      "id": 2,
+      "nombreReceta": "pizza",
+      "preparacion": "alguna descripcion",
+      "ingredientes": "1,2",
+      "imagen": "https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Almuerzo"
+    }
   ]
 }
