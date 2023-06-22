@@ -13,7 +13,7 @@ const Menu = ({usuarioLogueado,setUsuarioLogueado}) => {
   return (
     <Navbar bg="danger" variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand as={Link} to="/">Cafecito</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">Recetas</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
@@ -23,7 +23,7 @@ const Menu = ({usuarioLogueado,setUsuarioLogueado}) => {
              ( usuarioLogueado.nombreUsuario) ? 
               <>
               <NavLink end to="/administrador" className="nav-item nav-link">Administrador</NavLink>
-              <Button variant="dark" onClick={logout}>Logout</Button>
+              <NavLink end className="nav-item nav-link"  onClick={logout}>Logout</NavLink>
               </>:<NavLink end to="/login" className="nav-item nav-link">Login</NavLink>
             }
            
