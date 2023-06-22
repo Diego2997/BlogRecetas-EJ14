@@ -1,15 +1,27 @@
 const URL_usuario = import.meta.env.VITE_API_USUARIO;
-const URL_receta = import.meta.env.VITE_API_RECETAS;
+const URL_recetas = import.meta.env.VITE_API_RECETA;
+
+export const guardarUsuario = async (usuario)=>{
+    try{
+        const respuesta = await fetch(URL_usuario,{
+            method: "POST",
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(usuario)
+        });
+        return respuesta;
+    }catch (error){
+        console.log(error)
+    }
+}
 
 export const login = async (usuario)=>{
     try{
-        //pedir a la api la lista de usuarios
         const respuesta = await fetch(URL_usuario);
         const listaUsuarios = await respuesta.json();
-        //buscar si en la lista de usuarios existe el mail
         const usuarioBuscado = listaUsuarios.find((itemUsuario)=> itemUsuario.email === usuario.email);
         if(usuarioBuscado){
-            //si encontre el mail
             if(usuarioBuscado.password === usuario.password){
                 return usuarioBuscado
             }else{
@@ -17,7 +29,6 @@ export const login = async (usuario)=>{
                 return null
             }
         }else{
-            //no encontr el mail
             console.log('el mail no existe')
             return null
         }
@@ -25,12 +36,28 @@ export const login = async (usuario)=>{
         console.log(error)
     }
 }
-export const obtenerRecetas = async (receta)=>{
+
+export const obtenerRecetas = async ()=>{
     try{
-        const respuesta2 = await fetch(URL_receta)
-        const listaDeRecetas = await respuesta2.json()
-        return listaDeRecetas 
-    } catch(error){
+        const respuesta = await fetch(URL_recetas);
+        const listaRecetas = await respuesta.json();
+        return listaRecetas;
+    }catch (error){
+        console.log(error)
+    }
+}
+
+export const crearReceta = async (receta)=>{
+    try{
+        const respuesta = await fetch(URL_recetas,{
+            method: "POST",
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(receta)
+        });
+        return respuesta;
+    }catch (error){
         console.log(error)
     }
 }

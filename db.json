@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nombreUsuario": "admin",
-      "email": "admin@rollingcode.code",
+      "email": "admin@blogderecetas.com",
       "password": "123456aA$"
     }
   ],
@@ -25,4 +25,3 @@
       "categoria": "Almuerzo"
     }
   ]
-}
