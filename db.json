@@ -23,12 +23,12 @@
       "categoria": "postre"
     },
     {
-      "id": 2,
-      "nombreReceta": "pizza",
+      "nombreReceta": "pizza de anana",
       "preparacion": "alguna descripcion",
       "ingredientes": "1,2",
       "imagen": "https://assets.elgourmet.com/wp-content/uploads/2023/03/pizza_Mh3H4eanyBKEsStv1YclPWTf9OUqIi.png",
-      "categoria": "Almuerzo"
+      "categoria": "Almuerzo",
+      "id": 2
     },
     {
       "id": 3,

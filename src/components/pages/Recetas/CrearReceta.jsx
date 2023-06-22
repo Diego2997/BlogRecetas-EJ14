@@ -66,7 +66,7 @@ const CrearReceta = () => {
             as="textarea"
             type="text"
             placeholder=""
-            {...register("preparacionReceta", {
+            {...register("preparacion", {
               required: "El método de preparación es obligatorio",
               minLength: {
                 value: 10,
@@ -87,7 +87,7 @@ const CrearReceta = () => {
           <Form.Label>Ingredientes*</Form.Label>
           <Form.Control
             type="text"
-            {...register("ingredientesReceta", {
+            {...register("ingredientes", {
               required: "Es necesario ingresar los ingredientes",
               minLength: {
                 value: 5,
