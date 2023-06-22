@@ -1,8 +1,8 @@
 import React from 'react';
 import { Carousel,Container,Row } from 'react-bootstrap';
 import CardRecetas from './Recetas/CardRecetas';
-const Inicio = () => {
-    return (
+const Inicio = () => {  
+  return (
         <>
             <Carousel>
       <Carousel.Item>
@@ -47,8 +47,6 @@ const Inicio = () => {
         <h1 className="display-4">Recetas</h1>
         <hr />
         <Row>
-            <CardRecetas></CardRecetas>
-            <CardRecetas></CardRecetas>
             <CardRecetas></CardRecetas>
         </Row>
       </Container>
