@@ -5,6 +5,12 @@
       "nombreUsuario": "admin",
       "email": "admin@blogderecetas.com",
       "password": "123456aA$"
+    },
+    {
+      "username": "admin2",
+      "email": "admin2@blogderecetas.com",
+      "password": "Admin1234$",
+      "id": 2
     }
   ],
   "receta": [
@@ -39,5 +45,22 @@
       "ingredientes": "1,2",
       "imagen": "https://assets.elgourmet.com/wp-content/uploads/2023/03/pizza_Mh3H4eanyBKEsStv1YclPWTf9OUqIi.png",
       "categoria": "Almuerzo"
+    },
+    {
+      "nombreReceta": "cupcake",
+      "preparacionReceta": "lalalalalalalalallal",
+      "ingredientesReceta": "tomate, arroz, tequila",
+      "imagen": "https://images.pexels.com/photos/10223395/pexels-photo-10223395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Salsas",
+      "id": 5
+    },
+    {
+      "nombreReceta": "cupcake",
+      "preparacionReceta": "lalalalalla",
+      "ingredientesReceta": "tomate, arroz, tequila",
+      "imagen": "https://images.pexels.com/photos/10223395/pexels-photo-10223395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Postres",
+      "id": 6
     }
   ]
+}
